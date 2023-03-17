@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>MobiLearn - Learn by mobile</title>
+		<meta name="viewport" content="width=device-width"/>
+		<meta rel="icon" href="../static/assets/logo.png" type="image/png" />
+		<meta name="theme-color" content="#2962FF">
+		<meta name="msapplication-navbutton-color" content="#2962FF">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#2962FF">
+
+		<link rel="stylesheet" href="../static/lib/bootstrap5/bootstrap-icons.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/lib/bootstrap5/bootstrap5.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/css/blog.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/css/index.css" type="text/css" media="all" />
+
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div class="header">
+			<div class="header-content">
+				<div class="d-flex">
+					<div class="header-texts">
+						<!-- HEADER TEXTS -->
+						<span class="header-title bold">مُبی‌لرن</span><br>
+						<span class="header-description">بهت کمک می‌کنیم با گوشیت به آرزو های قشنگت برسی</span><br>
+						<!-- HEADER BUTTONS -->
+						<div class="d-flex">
+							<button class="btn login" onclick="goto(Links.login);">ورود</button>
+							<button class="btn signup" onclick="goto(Links.register);">ثبت‌نام</button>
+						</div>
+					</div>
+					<img src="../static/assets/GIF.gif" alt="[GIF]" class="header-logo" />
+				</div>
+				<!-- SEARCH -->
+				<div class="search-box d-flex">
+					<div class="search-realbox d-flex">
+						<i class="bi bi-search ic-search"></i>
+						<input type="text" class="search-field" id="search" placeholder="چی میخوای یاد بگیری؟" />
+					</div>
+					<button class="btn search-btn" id="searcher"><i class="bi bi-search btn-search-ic"></i></button>
+				</div>
+				<br>
+			</div>
+		</div>
+		<img src="../static/assets/logo.png" alt="[LOGO]" class="site-logo" />
+
+		<!-- LATEST COURSES -->
+		<p class="session-title bold">جدیدترین دوره‌ها</p>
+        <br>
+		<div class="courses">
+			{% for course in courses %}
+			<div class="course" onclick="goto(Links.course + '{{course.id}}');">
+				<img class="course-banner" src="{{course.thumbnail}}" alt="COURSE-LABEL" />
+				<p class="course-name bold">{{course.title}}</p>
+				<p class="course-master"><i class="bi bi-person"></i> {{getUser(course.master)['data']['object']['name']}}</p>
+				<div class="line"></div>
+				<div class="course-details d-flex">
+					<p class="course-time fa-num"><i class="bi bi-clock"></i> {{course.time}}</p>
+					<p class="course-price"><span class="current-color auto-sep fa-num">{{course.price.after_discount}}</span> تومان</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="d-flex">
+			<p class="session-title bold">جدیدترین مقالات</p>
+			<button class="bi bi-arrow-left btn btn-back btn-load-all-posts" onclick="goto(Links.blog.posts);"></button>
+		</div>
+
+		<div class="posts row">
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+		
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+			<div class="fakepost post">
+				<div class="card post-content card--skeleton">
+					<div class="img-cont">
+						<!-- <img src="../static/assets/article.jpg" alt="[ARTICLE]" class="post-thumbnail"> -->
+					</div>
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count">۲,۳۷۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count">۱,۰۱۵</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count">۳,۱۳۱</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title-box">
+					<span class="skeleton-text post-title">لورم ایپسوم لورم ...</span>
+				</div>
+			</div>
+		
+			{% for post in posts %}
+			<div class="post" id="{{post.id}}" hidden>
+				<div class="post-content">
+					<img src="{{post.thumbnail}}" alt="[ARTICLE]" class="post-thumbnail">
+					<div class="post-details d-flex">
+						<div class="post-detail">
+							<i class="bi bi-eye post-detail-ic ic-views"></i>
+							<p class="post-detail-count fa-num">{{post.views}}</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-chat post-detail-ic ic-comments"></i>
+							<p class="post-detail-count fa-num">{{post.comments|length}}</p>
+						</div>
+						<div class="post-detail">
+							<i class="bi bi-heart post-detail-ic ic-likes"></i>
+							<p class="post-detail-count fa-num">{{post.likes}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="post-title fa-num">{{post.title[:15]}} ...</div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<br>
+		<br>
+		<br>
+		
+
+		<!-- BOTTOM NAVIGATION -->
+		<nav class="navbar fixed-bottom menubar">
+			<div class="item selected" id="index">
+				<i class="bi bi-house menu-ic"></i> <br>
+				خانه
+			</div>
+			<div class="item" id="search">
+				<i class="bi bi-search menu-ic"></i> <br>
+				جستجو
+			</div>
+			<div class="item" id="bookmarks">
+				<i class="bi bi-bookmarks menu-ic"></i> <br>
+				برگزیده‌ها
+			</div>
+			<div class="item" id="user">
+				<i class="bi bi-person menu-ic"></i> <br>
+				پروفایل
+			</div>
+		</nav>
+
+		<script src="../static/js/global.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

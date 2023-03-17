@@ -1,0 +1,153 @@
+{
+    "bahmanahmadi.mail@gmail.com": {
+        "id": "u0000000000000000000000000000000",
+        "type": "user",
+        "name": "بهمن",
+        "email": "bahmanahmadi.mail@gmail.com",
+        "password": "00475c6f6d939ecbc6aaa1b650236366c4f5aa79e958b5c151196ba6187c153d",
+        "wallet": {
+            "left": 10000,
+            "actions": [
+                {
+                    "type": "charge",
+                    "from": "guid",
+                    "to": "guid",
+                    "datetime": "1401/11/7 13:29"
+                },
+                {
+                    "type": "charge",
+                    "from": "guid",
+                    "to": "guid",
+                    "datetime": "1401/11/7 13:29"
+                },
+                {
+                    "type": "charge",
+                    "from": "guid",
+                    "to": "guid",
+                    "datetime": "1401/11/7 13:29"
+                },
+                {
+                    "type": "charge",
+                    "from": "guid",
+                    "to": "guid",
+                    "datetime": "1401/11/7 13:29"
+                }
+            ]
+        },
+        "thumbnail": "/static/uploads/ab6761610000e5eb190f05216d793976487e0353.jpeg",
+        "bookmarks": [
+            "c0000000000000000000000000000000"
+        ],
+        "registed_courses": [
+            "c0000000000000000000000000000000",
+            "course_id",
+            "course_id"
+        ],
+        "notifs": [
+            {
+                "text": "harchi",
+                "datetime": "1401/11/7 13:32"
+            },
+            {
+                "text": "harchi",
+                "datetime": "1401/11/7 13:32"
+            },
+            {
+                "text": "harchi",
+                "datetime": "1401/11/7 13:32"
+            },
+            {
+                "text": "harchi",
+                "datetime": "1401/11/7 13:32"
+            }
+        ],
+        "cart": [
+            "course_id",
+            "course_id",
+            "course_id",
+            "course_id",
+            "c0000000000000000000000000000000"
+        ],
+        "interactions": {
+            "articles": {
+                "likes": [
+                    "a0000000000000000000000000000000",
+                    "a0000000000000000000000000000000",
+                    "a0000000000000000000000000000000",
+                    "a0000000000000000000000000000000"
+                ],
+                "dislikes": [
+                    "article_id",
+                    "article_id",
+                    "article_id",
+                    "article_id"
+                ]
+            },
+            "comments": {
+                "likes": {
+                    "c0000000000000000000000000000000": [
+                        "1",
+                        "4",
+                        "5-0-0-0-0-0-0"
+                    ],
+                    "a0000000000000000000000000000000": [
+                        "1"
+                    ]
+                },
+                "dislikes": {
+                    "c0000000000000000000000000000000": [
+                        "2",
+                        "1-2",
+                        "5-1"
+                    ]
+                }
+            },
+            "quizzes": {
+                "likes": {
+                    "c0000000000000000000000000000000": [
+                        "1-1"
+                    ]
+                },
+                "dislikes": {
+                    "c0000000000000000000000000000000": [
+                        "1-2"
+                    ]
+                }
+            }
+        },
+        "blog": {
+            "posts": [
+                "POST_ID",
+                "POST_ID",
+                "POST_ID",
+                "POST_ID"
+            ],
+            "followers": [
+                "USER_ID",
+                "USER_ID",
+                "USER_ID",
+                "USER_ID"
+            ],
+            "followings": [
+                "USER_ID",
+                "USER_ID",
+                "USER_ID",
+                "USER_ID"
+            ]
+        },
+        "is_banned": false,
+        "pub_courses": [
+            "course_id",
+            "course_id",
+            "course_id",
+            "course_id"
+        ],
+        "cv": null,
+        "accesses": [
+            "statistics",
+            "verifications",
+            "records",
+            "notifications"
+        ]
+    }
+}

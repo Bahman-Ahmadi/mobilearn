@@ -1,0 +1,308 @@
+{
+    "courses": {
+        "c0000000000000000000000000000000": {
+            "id": "c0000000000000000000000000000000",
+            "thumbnail": "../static/assets/banner.jpg",
+            "title": "آموزش گیت و گیت‌هاب",
+            "master": "u0000000000000000000000000000000",
+            "price": {
+                "before_discount": 10000,
+                "after_discount": 10000
+            },
+            "students": 76,
+            "videos": [
+                {
+                    "size": 173,
+                    "quality": 480,
+                    "time": "0:30:15",
+                    "title": "معرفی دوره",
+                    "is_public": false,
+                    "is_verified": true
+                }
+            ],
+            "comments": [
+                {
+                    "id": "1",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": 5,
+                    "likes": 19,
+                    "dislikes": 9,
+                    "text": "سلام، دنیا!",
+                    "datetime": "1401/11/17 19:56",
+                    "is_verified": true,
+                    "replies": [
+                        {
+                            "id": "1-1",
+                            "user": "u0000000000000000000000000000000",
+                            "likes": 8,
+                            "dislikes": 0,
+                            "text": "سلام، دنیا!",
+                            "datetime": "1401/11/18 20:56",
+                            "is_verified": true,
+                            "replies": []
+                        },
+                        {
+                            "id": "1-2",
+                            "user": "u0000000000000000000000000000000",
+                            "likes": 8,
+                            "dislikes": 9,
+                            "text": "سلام، دنیا!",
+                            "datetime": "1401/11/18 21:00",
+                            "is_verified": true,
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": 5,
+                    "likes": 20,
+                    "dislikes": 15,
+                    "text": "سلام، دنیا!",
+                    "datetime": "1401/11/19 21:56",
+                    "is_verified": true,
+                    "replies": [
+                        {
+                            "id": "2-1",
+                            "user": "u0000000000000000000000000000000",
+                            "stars": null,
+                            "likes": 0,
+                            "dislikes": 0,
+                            "text": "علیکم",
+                            "datetime": "1401/11/21 15:29",
+                            "is_verified": true,
+                            "type": "2",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": 5,
+                    "likes": 10,
+                    "dislikes": 20,
+                    "text": "سلام، دنیا!",
+                    "datetime": "1401/11/20 22:56",
+                    "is_verified": false,
+                    "replies": []
+                },
+                {
+                    "id": "3",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": 1,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "بای دنیا",
+                    "datetime": "1401/11/21 13:50",
+                    "is_verified": false,
+                    "type": "1",
+                    "replies": []
+                }
+            ],
+            "quizzes": [
+                {
+                    "id": "1",
+                    "user": "u0000000000000000000000000000000",
+                    "type": "important",
+                    "datetime": "1401/11/8 20:59",
+                    "text": "سلام دنیا!!",
+                    "answers": [
+                        {
+                            "id": "1-1",
+                            "user": "u0000000000000000000000000000000",
+                            "datetime": "1401/11/8 21:01",
+                            "text": "خداحافظی کن بابا",
+                            "likes": 21,
+                            "dislikes": 6,
+                            "answers": []
+                        },
+                        {
+                            "id": "1-2",
+                            "user": "u0000000000000000000000000000000",
+                            "datetime": "1401/11/8 21:01",
+                            "text": "خداحافظی کن ننه",
+                            "likes": 31,
+                            "dislikes": 23,
+                            "answers": [
+                                {
+                                    "id": "1-2-1",
+                                    "user": "u0000000000000000000000000000000",
+                                    "stars": null,
+                                    "likes": 0,
+                                    "dislikes": 0,
+                                    "text": "واو",
+                                    "datetime": "1401/11/21 15:22",
+                                    "is_verified": false,
+                                    "type": "1-2",
+                                    "answers": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": null,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "ok",
+                    "datetime": "1401/11/21 13:54",
+                    "is_verified": false,
+                    "type": "normal",
+                    "answers": [
+                        {
+                            "id": "2-1",
+                            "user": "u0000000000000000000000000000000",
+                            "stars": null,
+                            "likes": 0,
+                            "dislikes": 0,
+                            "text": "عاوکای",
+                            "datetime": "1401/11/21 16:03",
+                            "is_verified": false,
+                            "type": "2",
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": null,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "done",
+                    "datetime": "1401/11/21 13:54",
+                    "is_verified": false,
+                    "type": "important",
+                    "answers": []
+                },
+                {
+                    "id": "4",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": null,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "wow",
+                    "datetime": "1401/11/21 13:55",
+                    "is_verified": false,
+                    "type": "middle",
+                    "answers": []
+                },
+                {
+                    "id": "5",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": null,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "ajab",
+                    "datetime": "1401/11/21 15:06",
+                    "is_verified": true,
+                    "type": "normal",
+                    "answers": [
+                        {
+                            "id": "5-1",
+                            "user": "u0000000000000000000000000000000",
+                            "stars": null,
+                            "likes": 0,
+                            "dislikes": 0,
+                            "text": "به به",
+                            "datetime": "1401/11/21 16:00",
+                            "is_verified": true,
+                            "type": "5",
+                            "answers": [
+                                {
+                                    "id": "5-1-1",
+                                    "user": "u0000000000000000000000000000000",
+                                    "stars": null,
+                                    "likes": 0,
+                                    "dislikes": 0,
+                                    "text": "wow",
+                                    "datetime": "1401/11/21 16:02",
+                                    "is_verified": false,
+                                    "type": "5-1",
+                                    "answers": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "6",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": null,
+                    "likes": 0,
+                    "dislikes": 0,
+                    "text": "aali",
+                    "datetime": "1401/11/21 15:10",
+                    "is_verified": false,
+                    "type": "important",
+                    "answers": [
+                        {
+                            "id": "6-1",
+                            "user": "u0000000000000000000000000000000",
+                            "stars": null,
+                            "likes": 0,
+                            "dislikes": 0,
+                            "text": "سلااااام",
+                            "datetime": "1401/11/21 15:56",
+                            "is_verified": false,
+                            "type": "6",
+                            "answers": []
+                        }
+                    ]
+                }
+            ],
+            "time": "1:30:00",
+            "level": "مبتدی/پیشرفته",
+            "status": "در حال برگزاری/پایان یافته",
+            "last_update": "1401/11/8 21:05",
+            "shortlink": "https://rizy.ir/r4B9a",
+            "description": "lorem Ipsum...",
+            "category": "langs/bot/web/mobile/tools/social/others",
+            "is_verified": true
+        }
+    },
+    "blog": {
+        "a0000000000000000000000000000000": {
+            "id": "a0000000000000000000000000000000",
+            "thumbnail": "../static/assets/article.jpg",
+            "title": "لغات پایه برنامه‌نویسی",
+            "datetime": "1401/11/8 21:08",
+            "author": "u0000000000000000000000000000000",
+            "views": 200,
+            "likes": 60,
+            "dislikes": 10,
+            "shortlink": "https://rizy.ir/z4B9a",
+            "comments": [
+                {
+                    "id": "1",
+                    "user": "u0000000000000000000000000000000",
+                    "stars": 5,
+                    "likes": 18,
+                    "dislikes": 10,
+                    "text": "سلام، دنیا!",
+                    "datetime": "1401/11/8 20:56",
+                    "is_verified": true,
+                    "replies": [
+                        {
+                            "id": "1-1",
+                            "user": "u0000000000000000000000000000000",
+                            "likes": 8,
+                            "dislikes": 0,
+                            "text": "سلام، دنیا!",
+                            "datetime": "1401/11/8 20:56",
+                            "is_verified": false,
+                            "replies": []
+                        }
+                    ]
+                }
+            ],
+            "html": "lorem <b>Ipsum</b> ...",
+            "category": "social",
+            "is_verified": true
+        }
+    }
+}

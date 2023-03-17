@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>MobiLearn - Learn by mobile</title>
+		<meta name="viewport" content="width=device-width"/>
+		<meta rel="icon" href="../static/assets/logo.png" type="image/png" />
+		<meta name="theme-color" content="#2962FF">
+		<meta name="msapplication-navbutton-color" content="#2962FF">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#2962FF">
+
+		<link rel="stylesheet" href="../static/lib/bootstrap5/bootstrap-icons.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/lib/bootstrap5/bootstrap5.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/css/index.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../static/css/search.css" type="text/css" media="all" />
+	</head>
+	<body>
+		<br>
+
+		<!-- SEARCH -->
+		<div class="search-box d-flex">
+			<div class="search-realbox d-flex">
+				<i class="bi bi-search ic-search"></i>
+				<input type="text" class="search-field" id="field" placeholder="چی میخوای یاد بگیری؟" />
+			</div>
+			<button class="btn search-btn" id="searcher" onclick="showSearchResult(search('q', document.getElementById('field').value));"><i class="bi bi-search search-ic"></i></button>
+		</div>
+		<br>
+		<!-- FAVORITE SEARCHS -->
+		<div class="d-flex">
+			<p class="fav-searchs-title">جستجوهای محبوب: </p>
+			<div class="fav-searchs d-flex">
+				<div class="fav-search" onclick="showSearchResult(search('q', this.innerHTML));">لورم ایپسوم</div>
+				<div class="fav-search" onclick="showSearchResult(search('q', this.innerHTML));">لورم ایپسوم</div>
+				<div class="fav-search" onclick="showSearchResult(search('q', this.innerHTML));">لورم ایپسوم</div>
+				<div class="fav-search" onclick="showSearchResult(search('q', this.innerHTML));">لورم ایپسوم</div>
+				<div class="fav-search" onclick="showSearchResult(search('q', this.innerHTML));">لورم ایپسوم</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<!-- CATEGORIES -->
+		<p class="session-title bold">دسته‌بندی ها</p>
+
+		<div class="categories">
+			<div class="outer-neumorphism category bold" id="langs" onclick="showSearchResult(search('c', this.id));">زبان‌ها</div>
+			<div class="outer-neumorphism category bold" id="bot" onclick="showSearchResult(search('c', this.id));">ربات</div>
+			<div class="outer-neumorphism category bold" id="web" onclick="showSearchResult(search('c', this.id));">وب</div>
+			<div class="outer-neumorphism category bold" id="mobile" onclick="showSearchResult(search('c', this.id));">موبایل</div>
+			<div class="outer-neumorphism category bold" id="tools" onclick="showSearchResult(search('c', this.id));">ابزار ها</div>
+			<div class="outer-neumorphism category bold" id="social" onclick="showSearchResult(search('c', this.id));">شبکه‌های اجتماعی</div>
+			<div class="outer-neumorphism category bold" id="others" onclick="showSearchResult(search('c', this.id));">دیگر</div>
+		</div>
+
+		<!-- BOTTOM NAVIGATION -->
+		<nav class="navbar fixed-bottom menubar">
+			<div class="item" id="index">
+				<i class="bi bi-house menu-ic"></i> <br>
+				خانه
+			</div>
+			<div class="item selected" id="search">
+				<i class="bi bi-search menu-ic"></i> <br>
+				جستجو
+			</div>
+			<div class="item" id="bookmarks">
+				<i class="bi bi-bookmarks menu-ic"></i> <br>
+				برگزیده‌ها
+			</div>
+			<div class="item" id="user">
+				<i class="bi bi-person menu-ic"></i> <br>
+				پروفایل
+			</div>
+		</nav>
+
+        <script src="../static/lib/jQuery/jquery-3.6.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/global.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/search.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
